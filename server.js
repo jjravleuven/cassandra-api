@@ -7,6 +7,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(pino);
 
 app.use('*', (req, res) => {
+
+  console.log('request: ', req );
+  console.log("**************************************");
+  console.log('response: ', res );
+
   const name = req.query.name || 'World';
   res.setHeader('Content-Type', 'application/json');
   res.send(JSON.stringify({ greeting: `Hello ${name}!` }));
