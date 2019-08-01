@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "server": "node-env-run server --exec nodemon | pino-colado",
-    "dev": "run-p server start"
+    "dev": "npm start run-p server start"
   },
   "proxy": "http://localhost:3001",
   "devDependencies": {
