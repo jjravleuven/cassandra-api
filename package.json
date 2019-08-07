@@ -12,6 +12,8 @@
   "proxy": "http://localhost:5001",
   "devDependencies": {
     "cypress": "^3.4.1",
+    "source-map-explorer": "^2.0.1",
+    "stats-webpack-plugin": "^0.7.0",
     "dotenv": "^8.0.0",
     "mem": "^5.1.1",
     "nodemon": "^1.19.1",
